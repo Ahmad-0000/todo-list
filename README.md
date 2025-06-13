@@ -18,4 +18,9 @@ follow or implement.
 - [ ] Learn how to seperate development layers in backend web projects
 - [ ] Learn how to deploy a django project
 
-###
+### Along the way objectives
+
+These are easy objectives that will not take as much time as need
+to fulfill the main objectives. No limits on their number.
+
+- [ ] Learn how to build a MVP
