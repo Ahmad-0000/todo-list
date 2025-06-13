@@ -14,7 +14,7 @@ follow or implement.
 
 - [ ] Learning how to build an MVP
 - [ ] Writing users story
-- [ ] Learn basci CRUD operations in Django
+- [ ] Learn basic CRUD operations in Django
 - [ ] Learn authentication in Django
 - [ ] Learn basic security concepts in web apps
 
