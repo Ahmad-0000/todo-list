@@ -1,6 +1,6 @@
-# Notes Taking App
+# Todo-list App
 
-This is a note taking app I will use as a long learning project to
+This is a **Todo-list** app I will use as a long learning project to
 learn how to develop web applications in **Django**.
 
 I will build it in different **parts**, with each part having a set
