@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'todo_list',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': getenv('TODOAPP_DB_HOST'),
+        'NAME': getenv('TODOAPP_DB_NAME'),
         'HOST': getenv('TODOAPP_DB_HOST'),
         'USER': getenv('TODOAPP_DB_USER'),
         'PASSWORD': getenv('TODOAPP_DB_PAWD'),
