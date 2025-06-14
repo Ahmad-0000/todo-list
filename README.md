@@ -23,4 +23,3 @@ follow or implement.
 These are easy objectives that will not take as much time as need
 to fulfill the main objectives. No limits on their number.
 
-- [ ] Learn how to build a MVP
