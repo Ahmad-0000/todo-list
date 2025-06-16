@@ -23,7 +23,7 @@ class Task(models.Model):
     description = models.TextField()
     add_date = models.DateTimeField('addition_date')
     deadline = models.DateTimeField()
-    done_date = models.DateTimeField(null=True)
+    done_date = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         """
