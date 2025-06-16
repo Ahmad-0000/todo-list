@@ -33,3 +33,13 @@ class UserModelTest(TestCase):
         user = User(name="ahmad", email="ahmad", password="random")
         with self.assertRaises(ValidationError):
             user.full_clean()
+
+    def test_vary_long_passwords(self):
+        """
+        Passwords with more than 100 characters are not allowed
+        """
+        user = User(name="ahmad", email="ahmadhusain5002@gmail.com", password="a"*101)
+        with self.assertRaises(ValidationError):
+            user.full_clean()
+        with self.assertRaises(DataError):
+            user.save()
