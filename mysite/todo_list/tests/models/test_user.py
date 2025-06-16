@@ -25,3 +25,11 @@ class UserModelTest(TestCase):
             user.full_clean()
         with self.assertRaises(DataError):
             user.save()
+
+    def test_invalid_email_patterns(self):
+        """
+        Invalid email patterns are not allowed
+        """
+        user = User(name="ahmad", email="ahmad", password="random")
+        with self.assertRaises(ValidationError):
+            user.full_clean()
