@@ -27,7 +27,7 @@ class TestTaskModel(TestCase):
             description="I'm using this task as a test",
             add_date=self.now,
             deadline=self.now + timedelta(days=3),
-            end_date=None
+            done_date=None
         )
         task.full_clean() # Test if valid
         task.save() # Test if database-level valid
@@ -36,7 +36,7 @@ class TestTaskModel(TestCase):
         self.assertEqual(task.description, "I'm using this task as a test")
         self.assertEqual(task.add_date, self.now)
         self.assertEqual(task.deadline, self.now + timedelta(days=3))
-        self.assertEqual(task.end_date, None)
+        self.assertEqual(task.done_date, None)
 
     def test_task_with_long_title(self):
         """
@@ -48,7 +48,7 @@ class TestTaskModel(TestCase):
             description="I'm using this task as a test",
             add_date=self.now,
             deadline=self.now + timedelta(days=3),
-            end_date=None
+            done_date=None
         )
         with self.assertRaises(ValidationError):
             task.full_clean()
