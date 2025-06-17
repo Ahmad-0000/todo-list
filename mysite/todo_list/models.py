@@ -21,7 +21,7 @@ class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100, unique=True)
     description = models.TextField()
-    add_date = models.DateTimeField('addition_date')
+    add_date = models.DateTimeField('addition date')
     deadline = models.DateTimeField()
     done_date = models.DateTimeField(null=True, blank=True)
 
